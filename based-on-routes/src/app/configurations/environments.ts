@@ -1,0 +1,1 @@
+export const env1 = import.meta.env.VITE_APP_ENV_1
