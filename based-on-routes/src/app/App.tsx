@@ -6,8 +6,12 @@ import { reduxStore } from './configurations'
 import { ErrorBoundary } from 'react-error-boundary'
 import { ThemeProvider } from '@mui/material'
 import theme from '../commons/mui/theme'
+import i18n from './configurations/i18n'
+
+i18n.initialize()
 
 function App() {
+
   return (
     /* replace fallback with real page error, or redirect. */
     <ErrorBoundary fallback={<h1>Error!</h1>}>
